@@ -209,7 +209,7 @@ def main():
                     Uy_prob = Umodel.predict_proba(UX_test)[:, 1]
                     Upredictions[test_idx] += Uy_prob  # Cộng dồn kết quả dự đoán
 
-                Upredictions /= 3
+                Upredictions /= 2
 
                 # All neg
                 negative_indices = np.argwhere(np.array(Upredictions) < 0.5).reshape(-1)
