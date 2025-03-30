@@ -1,5 +1,5 @@
 # EGNNMDA
-EGNNMDA: Predict MiRNA-Disease Association Based on Ensemble Graph Neural Networks
+EGNNMDA: A Prediction Model Based on Ensemble Graph Neural Networks for MiRNA-Disease Associations
 
 ## Requirements
   * xgboost==2.0.3
