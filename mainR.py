@@ -237,9 +237,9 @@ def main():
             print('MODEL 1')
             ##--random
             X_train1, y_train = balance_data(X_train1T, y_trainT, 1)
-            y_prob1 = models_eval(method_set[0] + '_RandomMCB', X_train1, X_test1C, y_trainR, y_testC, ix, loop_i, 1)
+            y_prob1 = models_eval(method_set[0] + '_RandomMCB', X_train1, X_test1C, y_train, y_testC, ix, loop_i, 1)
             X_train2, y_trainR = balance_data(X_train2T, y_trainT, 1)
-            y_prob2 = models_eval(method_set[0] + '_RandomMCB', X_train2, X_test2C, y_trainR, y_testC, ix, loop_i, 2)
+            y_prob2 = models_eval(method_set[0] + '_RandomMCB', X_train2, X_test2C, y_train, y_testC, ix, loop_i, 2)
 
             #--Reliable negative selection
             # X_train1, y_train, selected_indices1 = nega_sample_selection(X_train1T, y_trainT)
