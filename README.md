@@ -23,5 +23,5 @@ EGNNMDA: A Prediction Model Based on Ensemble Graph Neural Networks for MiRNA-Di
      - type_eval = "KFOLD"  / "DIS_K" / "DENO_MI", respectively to 5-fold-CV, Case studies and Denovo miRNAs.
      - nloop = ```number of repeat times```.
      - Defaut: 5fold-CV in HMDD v2.0 dataset)
-  * Run ```main.py```.
+  * Run ```mainR.py```.
   
