@@ -29,10 +29,6 @@ def calculate_score(true_list, predict_list):
         auprc_list.append(auprc)
     print('AUC mean: %.4f, variance: %.4f \n' % (np.mean(auc_list), np.std(auc_list)),
           'AUPRC mean: %.4f, variance: %.4f \n' % (np.mean(auprc_list), np.std(auprc_list)),
-          'Accuracy mean: %.4f, variance: %.4f \n' % (np.mean(accuracy_list), np.std(accuracy_list)),
-          'Precision mean: %.4f, variance: %.4f \n' % (np.mean(precision_list), np.std(precision_list)),
-          'Recall mean: %.4f, variance: %.4f \n' % (np.mean(recall_list), np.std(recall_list)),
-          'F1-score mean: %.4f, variance: %.4f \n' % (np.mean(f1_list), np.std(f1_list)),
           sep="")
 
     return np.mean(auc_list), np.mean(auprc_list), np.mean(accuracy_list), \
